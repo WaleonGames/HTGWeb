@@ -1,22 +1,20 @@
-// src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from './components/Header'; // Nagłówek strony
-import HomePage from './pages/HomePage'; // Strona główna
-import VerificationForm from './components/VerificationForm'; // Strona weryfikacji
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Minecraft from './pages/Minecraft'
+import './index.css'
+import NotFound from './pages/NotFound';
 
-const App = () => {
+function App() {
   return (
     <Router>
-      <Header /> {/* Nagłówek aplikacji */}
-      <main>
-        <Switch>
-          <Route path="/" exact component={HomePage} /> {/* Strona główna */}
-          <Route path="/verify" component={VerificationForm} /> {/* Strona weryfikacji */}
-        </Switch>
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path='/minecraft' element={<Minecraft />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </Router>
   );
-};
+}
 
 export default App;

@@ -1,14 +1,12 @@
 // src/index.js
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';  // Możesz tu dodać style globalne
-import App from './App';  // Importujemy główną aplikację
-import { BrowserRouter as Router } from 'react-router-dom';  // Dodajemy Router dla routingu
+import ReactDOM from 'react-dom/client'; // Zamiast 'react-dom', używamy 'react-dom/client' w React 18
+import App from './App';
 
-// Renderowanie aplikacji do DOM
-ReactDOM.render(
-  <Router>
+// Renderowanie aplikacji w elemencie 'root' w index.html
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
     <App />
-  </Router>,
-  document.getElementById('root') // Renderujemy aplikację w elemencie HTML o id "root"
+  </React.StrictMode>
 );

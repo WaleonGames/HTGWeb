@@ -1,14 +1,16 @@
-// src/pages/HomePage.js
+// src/pages/Home.js
 import React from 'react';
+import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Links from '../components/Links';
 import About from '../components/About';
 import DiscordSupport from '../components/DiscordSupport';
 import Footer from '../components/Footer';
 
-const HomePage = () => {
+function Home() {
   return (
     <div>
+      <Header />
       <Hero />
       <Links />
       <About />
@@ -16,6 +18,6 @@ const HomePage = () => {
       <Footer />
     </div>
   );
-};
+}
 
-export default HomePage;
+export default Home;

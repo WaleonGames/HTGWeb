@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: white;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p, a {
+  font-size: 20px;
+}
+
+/*
+
+*/
+
+/* Stylowanie headera dla Minecraft */
+.header-minecraft {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Ustalona wysokość dla banera */
+  overflow: hidden;
+}
+
+.header-minecraft img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Dopasowanie obrazka w stylu banera */
+}
+
+.header-minecraft nav {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.header-minecraft nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.header-minecraft nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.header-minecraft nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5); /* Półprzezroczyste tło dla lepszej czytelności */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+/*
+
+*/
+
+/* src/styles.css */
+
+/* Styl dla strony 404 */
+.not-found {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.not-found h1 {
+  font-size: 3rem;
+  color: #ff4d4d;
+}
+
+.not-found p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.not-found a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1.2rem;
+}
+
+.not-found a:hover {
+  text-decoration: underline;
+}
