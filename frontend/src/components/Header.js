@@ -1,5 +1,6 @@
 // src/components/Header.js
 import React from 'react';
+import Very from '../components/Verification'
 
 const Header = () => {
   return (
@@ -9,6 +10,7 @@ const Header = () => {
         <ul style={{ listStyleType: 'none', display: 'flex', gap: '20px' }}>
           <li><a href="/">Home</a></li>
           <li><a href="/minecraft/">Server Minecraft</a></li>
+          <Very />
         </ul>
       </nav>
     </header>
